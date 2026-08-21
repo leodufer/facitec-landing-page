@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACITEC - Universidad Nacional de Canindeyú</title>
+    <meta name="description"
+        content="Facultad de Ciencias y Tecnología (FACITEC) - UNICAN. Ciencia, tecnología e innovación al servicio del desarrollo regional.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 1. Barra de Navegación Fija -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#inicio">
+                    <span class="logo-facitec">FACITEC</span>
+                    <span class="logo-unican">UNICAN</span>
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#institucional" class="nav-link">Institucional</a></li>
+                    <li><a href="#carreras" class="nav-link">Grado</a></li>
+                    <li><a href="#posgrado" class="nav-link">Posgrados</a></li>
+                    <li><a href="#admision" class="nav-link">Admisión</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#noticias" class="nav-link">Noticias</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#" class="btn btn-outline btn-sm">
+                        <i class="fas fa-laptop-code"></i> Campus Virtual
+                    </a>
+                    <a href="#admision" class="btn btn-primary btn-sm">
+                        Inscribirme al CPI
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"
+            style="background-image: url('assets/hero_bg.png'); background-size: cover; background-position: center; opacity: 0.3;">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container hero-content reveal">
+            <div class="badges">
+                <span class="badge"><i class="fas fa-check-circle"></i> Acreditada por ANEAES</span>
+                <span class="badge"><i class="fas fa-file-invoice-dollar"></i> Arancel Cero (Ley N° 6628/2020)</span>
+                <span class="badge"><i class="fas fa-map-marker-alt"></i> SDG - Curuguaty - Katueté</span>
+            </div>
+
+            <h1 class="hero-title">Ciencia, tecnología e innovación al servicio del <span>desarrollo regional.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Formamos profesionales de excelencia técnica y ética en Ciencias de la Computación, Análisis de Sistemas
+                e Investigación Aplicada.
+            </p>
+
+            <div class="hero-cta">
+                <a href="#admision" class="btn btn-primary btn-lg">Conoce el Proceso de Admisión <i
+                        class="fas fa-arrow-right"></i></a>
+                <a href="#carreras" class="btn btn-secondary btn-lg">Explorar Carrera de Grado</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Sección Institucional -->
+    <section id="institucional" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Nuestra Identidad</h2>
+                <p class="section-desc">Unidad académica de la Universidad Nacional de Canindeyú (UNICAN) comprometida
+                    con la generación de conocimiento científico, la extensión universitaria y la formación de talento
+                    tecnológico.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card reveal" style="--delay: 0.1s">
+                    <div class="card-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Misión</h3>
+                    <p>Formar profesionales en el área de las ciencias y la tecnología con estándares de calidad,
+                        producir conocimientos útiles a la sociedad, conservar la cultura y promover el desarrollo
+                        sostenible.</p>
+                </div>
+                <div class="card reveal" style="--delay: 0.2s">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Visión</h3>
+                    <p>Ser una prestigiosa institución de formación académica e investigación, centro de irradiación
+                        cultural y motor de transformación social.</p>
+                </div>
+                <div class="card reveal" style="--delay: 0.3s">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Valores</h3>
+                    <ul class="values-list">
+                        <li><i class="fas fa-check"></i> Liderazgo</li>
+                        <li><i class="fas fa-check"></i> Innovación</li>
+                        <li><i class="fas fa-check"></i> Pertinencia</li>
+                        <li><i class="fas fa-check"></i> Trabajo en Equipo</li>
+                        <li><i class="fas fa-check"></i> Transparencia e Integridad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Oferta de Grado -->
+    <section id="carreras" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Carrera de Grado</h2>
+                <div class="badge-accreditation">Sede Salto del Guairá y Filial Curuguaty acreditadas por la ANEAES
+                </div>
+            </div>
+
+            <div class="degree-card reveal">
+                <div class="degree-content">
+                    <h3 class="degree-title">Licenciatura en Análisis de Sistemas</h3>
+                    <p class="degree-profile">
+                        <strong>Perfil de Egreso:</strong> Profesional preparado para modelar, diseñar, implementar y
+                        gestionar sistemas informáticos complejos, liderar proyectos de software, ciberseguridad y
+                        gobernanza de TI.
+                    </p>
+                    <div class="degree-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <div>
+                                <h4>Sedes</h4>
+                                <span>Salto del Guairá (Central), Curuguaty, Katueté</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Modalidad</h4>
+                                <span>Presencial / Turnos según sede</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline degree-btn">
+                        <i class="fas fa-file-pdf"></i> Descargar Malla Curricular en PDF
+                    </a>
+                </div>
+                <div class="degree-image"
+                    style="background-image: url('assets/degree_img.png'); background-size: cover; background-position: center;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Programas de Posgrado -->
+    <section id="posgrado" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Formación Avanzada e Investigación</h2>
+                <p class="section-desc">Programas de alto nivel científico orientados al desarrollo de software y
+                    computación aplicada.</p>
+            </div>
+
+            <div class="postgrad-grid">
+                <div class="postgrad-card reveal" style="--delay: 0.1s">
+                    <div class="pg-badge">Maestría</div>
+                    <h3>Maestría en Informática aplicada a la Ingeniería de Software</h3>
+                    <p>Enfoque en metodologías ágiles, arquitectura de software avanzada y gestión de proyectos
+                        tecnológicos.</p>
+                </div>
+                <div class="postgrad-card reveal" style="--delay: 0.2s">
+                    <div class="pg-badge pg-badge-alt">Doctorado</div>
+                    <h3>Doctorado en Informática aplicada a la Ingeniería de Software</h3>
+                    <p>Enfoque en investigación doctoral, algoritmos complejos y transferencia tecnológica
+                        internacional.</p>
+                </div>
+            </div>
+            <div class="text-center reveal" style="--delay: 0.3s; margin-top: 3rem;">
+                <a href="#" class="btn btn-primary">Consultar Convocatorias de Posgrado <i
+                        class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Proceso de Admisión -->
+    <section id="admision" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Admisión y Curso Probatorio de Ingreso (CPI)</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal" style="--delay: 0.1s">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <h3>Convocatoria</h3>
+                        <p><strong>Salto del Guairá:</strong> 2 convocatorias anuales.<br><strong>Curuguaty y
+                                Katueté:</strong> 1 convocatoria anual.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="--delay: 0.2s">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <h3>Inscripción</h3>
+                        <p>Presentación de documentos de bachillerato y aplicación al beneficio Arancel Cero.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="--delay: 0.3s">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <h3>Cursillo y Evaluaciones</h3>
+                        <p>Desarrollo del CPI y exámenes de admisión en materias troncales.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal" style="--delay: 0.4s">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content">
+                        <h3>Matriculación</h3>
+                        <p>Ingreso oficial a la Licenciatura en Análisis de Sistemas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-box reveal" style="--delay: 0.5s">
+                <div class="faq-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                <div class="faq-content">
+                    <h4>¿Aplica la Ley de Arancel Cero?</h4>
+                    <p><strong>Sí</strong>, para egresados de colegios públicos y subvencionados conforme a los
+                        requisitos legales vigentes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Ecosistema Digital y Servicios -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Servicios para la Comunidad Universitaria</h2>
+            </div>
+
+            <div class="services-grid">
+                <a href="#" class="service-card reveal" style="--delay: 0.1s">
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Sistema Académico OrionF</h3>
+                    <p>Accesos directos segmentados por Sede SDG, Filial CTY y Filial KTT.</p>
+                </a>
+                <a href="#" class="service-card reveal" style="--delay: 0.2s">
+                    <div class="service-icon"><i class="fas fa-laptop-house"></i></div>
+                    <h3>Campus Virtual FACITEC</h3>
+                    <p>Plataforma Moodle para clases y materiales interactivos.</p>
+                </a>
+                <a href="#" class="service-card reveal" style="--delay: 0.3s">
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Bolsa de Pasantías y Empleo</h3>
+                    <p>Vinculación directa con empresas de tecnología locales e internacionales.</p>
+                </a>
+                <a href="#" class="service-card reveal" style="--delay: 0.4s">
+                    <div class="service-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Emisión de Certificados Web</h3>
+                    <p>Validador y emisión digital de constancias institucionales y eventos (AFANTEC/EXPOTEC).</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Eventos y Actualidad -->
+    <section id="noticias" class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Vida Universitaria y Novedades</h2>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card reveal" style="--delay: 0.1s">
+                    <div class="news-img expotec-bg"
+                        style="background-image: url('assets/expotec.png'); background-size: cover; background-position: center;">
+                        <div class="news-overlay"></div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-tag">Evento Anual</div>
+                        <h3>EXPOTEC</h3>
+                        <p>Exposición anual de proyectos tecnológicos, robótica y desarrollo de software de los
+                            estudiantes.</p>
+                    </div>
+                </div>
+                <div class="news-card reveal" style="--delay: 0.2s">
+                    <div class="news-img agreements-bg"
+                        style="background-image: url('assets/agreements.png'); background-size: cover; background-position: center;">
+                        <div class="news-overlay"></div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-tag">Institucional</div>
+                        <h3>Convenios de Cooperación</h3>
+                        <p>Alianzas estratégicas con empresas de desarrollo y telecomunicaciones.</p>
+                    </div>
+                </div>
+                <div class="news-card reveal" style="--delay: 0.3s">
+                    <div class="news-img infra-bg"
+                        style="background-image: url('assets/infra.png'); background-size: cover; background-position: center;">
+                        <div class="news-overlay"></div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-tag">Campus</div>
+                        <h3>Extensión e Infraestructura</h3>
+                        <p>Instalación de redes de fibra óptica y actividades culturales y comunitarias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Contacto y Sedes -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Canales de Atención y Ubicación</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <div class="c-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp de Secretaría / Consultas</h4>
+                            <p>+595 984 942700</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="c-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Correo Institucional</h4>
+                            <p>contacto@facitec.edu.py</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="c-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Sede Central</h4>
+                            <p>Del Maestro y Camilo Recalde, Salto del Guairá, Canindeyú, Paraguay.</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <p>Mapa Interactivo de Ubicación</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal" style="--delay: 0.2s">
+                    <h3>Formulario de Consulta Rápida</h3>
+                    <form class="contact-form" id="lead-box">
+                        <div class="form-group">
+                            <label for="name">Nombre y Apellido</label>
+                            <input type="text" id="name" required placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono / WhatsApp</label>
+                            <input type="tel" id="phone" required placeholder="Ej. 098X 123456">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" required placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="sede">Sede de Interés</label>
+                            <select id="sede" required>
+                                <option value="" disabled selected>Seleccione una sede...</option>
+                                <option value="sdg">Salto del Guairá</option>
+                                <option value="curuguaty">Curuguaty</option>
+                                <option value="katuete">Katueté</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="consulta">Consulta sobre</label>
+                            <select id="consulta" required>
+                                <option value="" disabled selected>Seleccione un tema...</option>
+                                <option value="admision">Admisión Grado</option>
+                                <option value="posgrado">Posgrado</option>
+                                <option value="tramites">Trámites Académicos</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Enviar Mensaje <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Pie de Página -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-facitec">FACITEC</span> | <span class="logo-unican">UNICAN</span>
+                </div>
+                <p>Facultad de Ciencias y Tecnología de la Universidad Nacional de Canindeyú. Comprometidos con la
+                    excelencia educativa y el desarrollo tecnológico.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Enlaces de Interés</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> UNICAN Central</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ANEAES</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> CONES</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> CONACYT</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> MITIC</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Portal Paraguay</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="#carreras"><i class="fas fa-chevron-right"></i> Grado</a></li>
+                    <li><a href="#posgrado"><i class="fas fa-chevron-right"></i> Posgrados</a></li>
+                    <li><a href="#admision"><i class="fas fa-chevron-right"></i> Admisión / CPI</a></li>
+                    <li><a href="#servicios"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Facultad de Ciencias y Tecnología - UNICAN. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
