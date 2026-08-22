@@ -1,34 +1,39 @@
 :root {
     /* Color Palette - Institutional Theme (UNICAN / FACITEC) */
-    --bg-main: #F8FAFC; /* Light gray/white background */
+    --bg-main: #F8FAFC;
+    /* Light gray/white background */
     --bg-sec: #FFFFFF;
     --bg-card: rgba(255, 255, 255, 0.95);
     --bg-nav: rgba(255, 255, 255, 0.95);
-    
-    --primary: #D32F2F; /* Institutional Red */
+
+    --primary: #D32F2F;
+    /* Institutional Red */
     --primary-hover: #B71C1C;
     --primary-light: rgba(211, 47, 47, 0.1);
-    
-    --secondary: #E53935; /* Brighter Red */
+
+    --secondary: #E53935;
+    /* Brighter Red */
     --secondary-hover: #C62828;
-    
-    --accent: #F59E0B; /* Accent color */
-    
-    --text-main: #0F172A; /* Dark slate text */
+
+    --accent: #F59E0B;
+    /* Accent color */
+
+    --text-main: #0F172A;
+    /* Dark slate text */
     --text-muted: #475569;
-    
+
     --border: rgba(211, 47, 47, 0.15);
     --glass-border: rgba(211, 47, 47, 0.1);
-    
+
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-base: 0.3s ease;
     --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -55,7 +60,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     color: var(--text-main);
     line-height: 1.2;
@@ -108,7 +118,9 @@ ul {
 }
 
 /* Typography Helpers */
-.text-center { text-align: center; }
+.text-center {
+    text-align: center;
+}
 
 /* Buttons */
 .btn {
@@ -204,20 +216,22 @@ ul {
 }
 
 .logo a {
+    text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-family: var(--font-heading);
-    font-weight: 800;
-    font-size: 1.5rem;
 }
 
-.logo-facitec {
-    color: var(--primary);
+.logo-img {
+    height: 150px;
+    /* Increased height for better visibility */
+    width: auto;
+    max-width: 400px;
+    object-fit: contain;
+    transition: var(--transition-base);
 }
 
-.logo-unican {
-    color: var(--text-main);
+.logo-img:hover {
+    opacity: 0.9;
 }
 
 .nav-menu {
@@ -238,7 +252,8 @@ ul {
     position: relative;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--text-main);
 }
 
@@ -253,7 +268,8 @@ ul {
     transition: var(--transition-base);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -317,8 +333,13 @@ ul {
 }
 
 @keyframes float {
-    0% { transform: translate(0, 0) scale(1); }
-    100% { transform: translate(50px, 50px) scale(1.1); }
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(50px, 50px) scale(1.1);
+    }
 }
 
 .hero-content {
@@ -581,9 +602,26 @@ ul {
     z-index: 3;
 }
 
-.f1 { top: -20px; left: -30px; color: var(--primary); animation: float-alt 6s infinite ease-in-out; }
-.f2 { bottom: -10px; right: -40px; color: var(--secondary); animation: float-alt 5s infinite ease-in-out 1s; }
-.f3 { top: 60px; right: -50px; color: var(--accent); animation: float-alt 7s infinite ease-in-out 2s; }
+.f1 {
+    top: -20px;
+    left: -30px;
+    color: var(--primary);
+    animation: float-alt 6s infinite ease-in-out;
+}
+
+.f2 {
+    bottom: -10px;
+    right: -40px;
+    color: var(--secondary);
+    animation: float-alt 5s infinite ease-in-out 1s;
+}
+
+.f3 {
+    top: 60px;
+    right: -50px;
+    color: var(--accent);
+    animation: float-alt 7s infinite ease-in-out 2s;
+}
 
 .glow-effect {
     position: absolute;
@@ -596,9 +634,17 @@ ul {
 }
 
 @keyframes float-alt {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0); }
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* Posgrado Section */
@@ -812,19 +858,30 @@ ul {
 }
 
 /* Abstract backgrounds for news since we don't have images */
-.expotec-bg { background: linear-gradient(135deg, #1e3a8a, #312e81); }
-.agreements-bg { background: linear-gradient(135deg, #064e3b, #065f46); }
-.infra-bg { background: linear-gradient(135deg, #701a75, #831843); }
+.expotec-bg {
+    background: linear-gradient(135deg, #1e3a8a, #312e81);
+}
+
+.agreements-bg {
+    background: linear-gradient(135deg, #064e3b, #065f46);
+}
+
+.infra-bg {
+    background: linear-gradient(135deg, #701a75, #831843);
+}
 
 .news-overlay {
     position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(0,0,0,0.2);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .news-icon-bg {
     font-size: 4rem;
-    color: rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.2);
     z-index: 1;
 }
 
@@ -1082,7 +1139,7 @@ ul {
     .degree-card {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
@@ -1092,7 +1149,7 @@ ul {
     .section {
         padding: 4rem 0;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: 0;
@@ -1107,32 +1164,32 @@ ul {
         padding: 2rem;
         border-left: 1px solid var(--border);
     }
-    
+
     .nav-menu.active {
         right: 0;
     }
-    
+
     .nav-links {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-    
+
     .nav-actions {
         flex-direction: column;
         width: 100%;
         margin-top: 1rem;
     }
-    
+
     .mobile-menu-btn {
         display: block;
         z-index: 1001;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
